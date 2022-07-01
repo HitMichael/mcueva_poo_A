@@ -62,6 +62,14 @@ public class Persona {
         this.dirección = dirección;
     }
 
+    public TipoGenero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(TipoGenero genero) {
+        this.genero = genero;
+    }
+
     @Override
     public String toString() {
         return "Los datos solicitados de la persona son:" + "Cedula: " + getCedula() + "Nombre: " + getNombre()

@@ -36,7 +36,7 @@ public class Aplicación {
         System.out.print("Ingrese la dirección de la persona2 por favor:");
         p2.setDirección(leer.next());
 
-
+        System.out.println("-----GRACIAS----"); 
     }
 
 }
