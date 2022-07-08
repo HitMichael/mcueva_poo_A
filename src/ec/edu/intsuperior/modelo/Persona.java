@@ -5,41 +5,28 @@ public class Persona {
     String cedula;
     String nombre;
     String apellido;
-    String dirección;
-
-    private static class TipoGenero {
-
-        public TipoGenero() {
-        }
-    }
-
-    public enum genero {
-        MACULINO, FEMENINO
-    }
-    TipoGenero genero;
+    String direccion;
 
     public Persona() {
-
     }
 
-    public Persona(String cedula, String nombre, String apellido, String dirección, TipoGenero genero) {
+    public Persona(String cedula, String nombre, String apellido, String direccion) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dirección = dirección;
-        this.genero = genero;
+        this.direccion = direccion;
     }
 
-    public String getCedula() {
-        return cedula;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public void setNombre(String nombre) {
@@ -50,29 +37,22 @@ public class Persona {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public String getCi() {
+        return cedula;
     }
 
-    public String getDirección() {
-        return dirección;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDirección(String dirección) {
-        this.dirección = dirección;
-    }
-
-    public TipoGenero getGenero() {
-        return genero;
-    }
-
-    public void setGenero(TipoGenero genero) {
-        this.genero = genero;
-    }
+    public String getNombre() {
+        return nombre;
+ }
 
     @Override
     public String toString() {
-        return "Los datos solicitados de la persona son:" + "Cedula: " + getCedula() + "Nombre: " + getNombre()
-                + "Apellido: " + getApellido() + "Dirección" + getDirección();
-    }
-}
+        return "Los datos de la persona solicitada es:\n"
+                + "Cedula:" + getCi() + "\n"
+                + "Nombre:" + getNombre() + "\n"
+                + "Apellido" + getApellido() + "\n"
+                + "Direccion" + getDireccion();
