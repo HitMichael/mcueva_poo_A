@@ -12,16 +12,18 @@ public class Aplication {
         Persona p3 = new Persona();
         System.out.println("Ingrese el numero de la cedula de la persona 1");
         p1.setCedula(leer.next());
-        System.out.println("Ingresa el nombre de la persona");
+        System.out.println("Ingresa el nombre de la persona 1");
         p1.setNombre(leer.next());
-        System.out.println("Ingresa el apellido de la persona");
+        System.out.println("Ingresa el apellido de la persona 1");
         p1.setApellido(leer.next());
+        System.out.println("Ingresa la direccion de la persona 1");
+        p1.setDireccion(leer.next());
 
-       System.out.println("Los datos de la persona solicitada es:  "\n"
-                + "C1:" + getCedula() + "\n"
-                + "Nombre:" + getNombre() + "\n"
-                + "Apellido" + getApellido() + "\n"
-                + "Direccion" + getDireccion() );
+       System.out.println ("Los datos de la persona solicitada es:" + "\n"
+                + "C1:" + p1.getCedula() + "\n"
+                + "Nombre:" + p1.getNombre() + "\n"
+                + "Apellido" + p1.getApellido() + "\n"
+                + "Direccion" + p1.getDireccion()+"\n"); 
         
         System.out.println(p1.toString());
 

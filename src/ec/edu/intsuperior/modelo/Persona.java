@@ -37,7 +37,7 @@ public class Persona {
         return apellido;
     }
 
-    public String getCi() {
+    public String getCedula() {
         return cedula;
     }
 
@@ -52,7 +52,9 @@ public class Persona {
     @Override
     public String toString() {
         return "Los datos de la persona solicitada es:\n"
-                + "Cedula:" + getCi() + "\n"
-                + "Nombre:" + getNombre() + "\n"
-                + "Apellido" + getApellido() + "\n"
-                + "Direccion" + getDireccion();
+                + "Cedula: " + getCedula() + "\n"
+                + "Nombre: " + getNombre() + "\n"
+                + "Apellido: " + getApellido() + "\n"
+                + "Direccion: " + getDireccion()+ "\n";
+        }
+    }
